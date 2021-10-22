@@ -14,7 +14,7 @@ install-data-local:
 if ENABLE_GRUV
 	$(MKDIR_P) 
 	cp $(srcdir)/index.theme $(ithemedir)
-	cp $(srcdir)/term/gruv.theme $(termdir)
+
 endif
 
 # ENABLE_GNOME_SHELL
@@ -57,6 +57,8 @@ if ENABLE_GRUV
 	cd $(srcdir)/xfwm4 && \
 		cp -R assets/*.png $(ithemedir)/xfwm4 && \
 		cp themerc $(ithemedir)/xfwm4/themerc
+
+	cp $(srcdir)/term/gruv.theme $(termdir)/gruv.theme
 endif # ENABLE_LIGHT
 endif # ENABLE_XFWM
 
