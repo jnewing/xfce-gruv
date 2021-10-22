@@ -14,6 +14,7 @@ if ENABLE_GRUV
 	$(MKDIR_P) 
 	
     cp $(srcdir)/index.theme $(ithemedir)
+    
 endif
 
 # ENABLE_GNOME_SHELL
