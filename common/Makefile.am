@@ -11,9 +11,6 @@ install-exec-hook:
 
 install-data-local:
 
-$(info copy over terminal)
-$(shell cp ./term/gruv.theme $(termdir))
-
 if ENABLE_GRUV
 	$(MKDIR_P) 
 	cp $(srcdir)/index.theme $(ithemedir)
