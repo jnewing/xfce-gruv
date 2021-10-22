@@ -11,6 +11,10 @@ install-exec-hook:
 
 install-data-local:
 
+echo "Test1: $(srcdir)"
+echo "Test2: $(ithemedir)"
+echo "Test3: $(termdir)"
+
 if ENABLE_GRUV
 	$(MKDIR_P) 
 	cp $(srcdir)/index.theme $(ithemedir)
@@ -58,7 +62,7 @@ if ENABLE_GRUV
 		cp -R assets/*.png $(ithemedir)/xfwm4 && \
 		cp themerc $(ithemedir)/xfwm4/themerc
 
-	cp $(srcdir)/term/gruv.theme $(termdir)/gruv.theme
+
 endif # ENABLE_LIGHT
 endif # ENABLE_XFWM
 
