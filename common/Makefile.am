@@ -12,9 +12,8 @@ install-data-local:
 
 if ENABLE_GRUV
 	$(MKDIR_P) 
-	
-    cp $(srcdir)/index.theme $(ithemedir)
-    
+	cp $(srcdir)/index.theme $(ithemedir)
+	cp $(srcdir)/xfce4-terminal/gruv.theme /usr/share/xfce4/terminal/colorschemes
 endif
 
 # ENABLE_GNOME_SHELL
@@ -65,6 +64,6 @@ uninstall-local:
 	rm -rf $(ithemedir)
 
 EXTRA_DIST = $(srcdir)/gnome-shell \
-	     $(srcdir)/gtk-3.0 \
-	     $(srcdir)/xfwm4 \
-	     $(srcdir)/index.theme
+		 $(srcdir)/gtk-3.0 \
+		 $(srcdir)/xfwm4 \
+		 $(srcdir)/index.theme
