@@ -64,7 +64,6 @@ uninstall-local:
 	rm -rf $(ithemedir)
 
 EXTRA_DIST = $(srcdir)/gnome-shell \
-	     $(srcdir)/gtk-2.0 \
 	     $(srcdir)/gtk-3.0 \
 	     $(srcdir)/xfwm4 \
 	     $(srcdir)/index.theme
