@@ -16,9 +16,7 @@ if ENABLE_GRUV
 endif
 
 if ENABLE_TERM
-	$(MKDIR_P) $(ithemedir)/term
-
-	cd $(srcdir)/xfce4-termainl && cp gruv.theme $(ithemedir)/term
+	cp "$(srcdir)/xfce4-termainl/gruv.theme" "/usr/share/xfce4/terminal/colorschemes/gruv.theme"
 endif
 
 # ENABLE_GNOME_SHELL
