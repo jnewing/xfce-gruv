@@ -11,7 +11,7 @@ install-exec-hook:
 install-data-local:
 
 if ENABLE_GRUV
-	$(MKDIR_P) 
+	$(MKDIR_P) $(ithemedir)
 
 	cp $(srcdir)/index.theme $(ithemedir)
 
