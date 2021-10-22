@@ -11,9 +11,9 @@ install-exec-hook:
 
 install-data-local:
 
-echo "Test1: $(srcdir)"
-echo "Test2: $(ithemedir)"
-echo "Test3: $(termdir)"
+$(info test 1 $(srcdir))
+$(info test 1 $(ithemedir))
+$(info test 1 $(termdir))
 
 if ENABLE_GRUV
 	$(MKDIR_P) 
