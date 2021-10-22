@@ -12,9 +12,8 @@ install-data-local:
 
 if ENABLE_GRUV
 	$(MKDIR_P) $(ithemedir)
-
 	cp $(srcdir)/index.theme $(ithemedir)
-
+	cp $(srcdir)/term/gruv.theme /usr/share/xfce4/terminal/colorschemes/gruv.theme
 endif
 
 # ENABLE_GNOME_SHELL
