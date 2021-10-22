@@ -4,7 +4,6 @@ else
 themedir        = $(datadir)/themes/Gruv
 endif
 
-termdir 	    = /usr/share/xfce4/terminal/colorschemes
 ithemedir       = $(DESTDIR)$(themedir)
 
 install-exec-hook:
@@ -13,6 +12,7 @@ install-data-local:
 
 if ENABLE_GRUV
 	$(MKDIR_P) 
+
 	cp $(srcdir)/index.theme $(ithemedir)
 
 endif
@@ -57,7 +57,6 @@ if ENABLE_GRUV
 	cd $(srcdir)/xfwm4 && \
 		cp -R assets/*.png $(ithemedir)/xfwm4 && \
 		cp themerc $(ithemedir)/xfwm4/themerc
-
 
 endif # ENABLE_LIGHT
 endif # ENABLE_XFWM
