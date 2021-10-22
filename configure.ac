@@ -17,7 +17,6 @@ ARC_ENABLE([GNOME_SHELL],   [gnome-shell],   [GNOME Shell],   [disable])
 ARC_ENABLE([GTK3],          [gtk3],          [GTK3],          [disable])
 ARC_ENABLE([XFWM],          [xfwm],          [XFWM],          [disable])
 ARC_ENABLE([TRANSPARENCY],  [transparency],  [transparency],  [disable])
-ARC_ENABLE([TERM],          [term],          [term],          [disable])
 
 AS_IF([test "x$ENABLE_GNOME_SHELL$ENABLE_GTK3" != xnono], [ARC_GNOME])
 

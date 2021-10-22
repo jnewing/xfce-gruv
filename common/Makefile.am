@@ -4,6 +4,7 @@ else
 themedir        = $(datadir)/themes/Gruv
 endif
 
+termdir 	    = /usr/share/xfce4/terminal/colorschemes
 ithemedir       = $(DESTDIR)$(themedir)
 
 install-exec-hook:
@@ -13,10 +14,7 @@ install-data-local:
 if ENABLE_GRUV
 	$(MKDIR_P) 
 	cp $(srcdir)/index.theme $(ithemedir)
-endif
-
-if ENABLE_TERM
-	cp "$(srcdir)/xfce4-termainl/gruv.theme" "/usr/share/xfce4/terminal/colorschemes/gruv.theme"
+	cp $(srcdir)/term/gruv.theme $(termdir)
 endif
 
 # ENABLE_GNOME_SHELL
