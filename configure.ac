@@ -1,9 +1,9 @@
 AC_INIT(
-    [arc-theme],
+    [xfce-gruv],
     [20161119],
-    [https://github.com/horst3180/Arc-theme/issues],
-    [arc-theme],
-    [https://github.com/horst3180/Arc-theme],
+    [https://github.com/jnewing/xfce-gruv/issues],
+    [xfce-gruv],
+    [https://github.com/jnewing/xfce-gruv],
     []
 )
 
