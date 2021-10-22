@@ -65,4 +65,5 @@ uninstall-local:
 EXTRA_DIST = $(srcdir)/gnome-shell \
 	     $(srcdir)/gtk-3.0 \
 	     $(srcdir)/xfwm4 \
+         $(srcdir)/xfce4-terminal \
 	     $(srcdir)/index.theme
