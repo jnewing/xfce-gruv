@@ -10,14 +10,9 @@ install-exec-hook:
 
 install-data-local:
 
-
 if ENABLE_GRUV
 	$(MKDIR_P) 
 	cp $(srcdir)/index.theme $(ithemedir)
-endif
-
-if ENABLE_TERM
-    cp $(srcdir)/xfce4-terminal/gruv.theme /usr/share/xfce4/terminal/colorschemes/gruv.theme
 endif
 
 # ENABLE_GNOME_SHELL
